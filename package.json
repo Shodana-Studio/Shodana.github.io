@@ -2,9 +2,8 @@
 	"name": "shodana-website",
 	"version": "0.0.0",
 	"scripts": {
-		"build": "npm run lint && vuepress build src",
-		"lint": "eslint --fix src/.vuepress/**/*.{js,vue} --no-ignore",
-		"serve": "vuepress dev src",
+		"build": "npm run lint",
+		"lint": "eslint --fix --no-ignore",
 		"git-update": "git fetch upstream && git merge upstream/main"
 	},
 	"repository": {
