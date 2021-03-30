@@ -1,24 +1,32 @@
 {
-	"name": "shodana-website",
+	"name": "paperback-website",
 	"version": "0.0.0",
 	"scripts": {
 		"build": "npm run lint && vuepress build src",
 		"lint": "eslint --fix src/.vuepress/**/*.{js,vue} --no-ignore",
 		"serve": "vuepress dev src",
-		"git-update": "git fetch upstream && git merge upstream/main"
+		"git-update": "git fetch upstream && git merge upstream/master"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Shodana-Studio/website.git"
+		"url": "git+https://github.com/Paperback-iOS/website.git"
 	},
 	"private": true,
 	"devDependencies": {
+		"@vuepress/plugin-back-to-top": "^1.5.2",
+		"@vuepress/plugin-google-analytics": "^1.5.2",
+		"@vuepress/plugin-pwa": "^1.5.2",
 		"eslint": "^6.8.0",
 		"eslint-config-airbnb": "^18.2.0",
 		"eslint-config-prettier": "^6.10.0",
 		"eslint-config-vuepress": "^2.1.0",
 		"eslint-plugin-prettier": "^3.1.4",
 		"prettier": "^2.0.5",
+		"vuepress": "^1.5.2",
+		"vuepress-plugin-clean-urls": "^1.1.1",
+		"vuepress-plugin-container": "^2.1.4",
+		"vuepress-plugin-element-ui": "^1.1.0",
+		"vuepress-types": "^0.9.3"
 	},
 	"dependencies": {
 		"axios": "^0.21.1",
@@ -27,5 +35,8 @@
 		"eslint-plugin-react": "^7.20.3",
 		"eslint-plugin-react-hooks": "^2.5.1",
 		"prettier-config-vuepress": "^1.0.0",
+		"vuepress-plugin-robots": "^1.0.1",
+		"vuepress-plugin-sitemap": "^2.3.1",
+		"vuepress-theme-yuu": "^2.3.0"
 	}
 }
